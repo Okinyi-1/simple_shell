@@ -12,4 +12,5 @@ The following are the general requirements of this project:
 8. All your header files should be include guarded
 9. Use system calls only when you need to (why?)
 10. Write a README with the description of your project
-11. You should have an AUTHORS file at the root of your repository, listing all individuals having contributed content to the repository. 
+11. You should have an AUTHORS file at the root of your repository, listing all individuals having contributed content to the repository.
+ 
