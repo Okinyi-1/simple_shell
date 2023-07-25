@@ -18,19 +18,15 @@ char *path_lookup(const char *command)
 	{
 		return (NULL);
 	}
-
 	if (path == NULL)
 	{
 		perror("Memory allocation error");
 		exit(EXIT_FAILURE);
 	}
 
-	char *path_entry = strtok(path, ":");
-
 	while (path_entry != NULL)
 	{
 		snprintf(cmd_path, sizeof(cmd_path), "%s/%s", path_entry, command);
-
 		/* Check if the command exists in the current directory */
 		if (access(cmd_path, X_OK) == 0)
 		{

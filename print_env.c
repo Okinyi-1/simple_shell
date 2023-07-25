@@ -3,11 +3,8 @@
 /**
  * print_environment - Displays the external environment
  *
- * @environ: pointer to the environment
- * @env_var: pointer to environ
+ * Return: 0 Success
  */
-
-extern char **environ;
 
 void print_environment(void)
 {
