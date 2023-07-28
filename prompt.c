@@ -2,9 +2,6 @@
 
 /**
  * display_prompt - displays the shell input.
- *
- * run_shell - displays prompt,read and execute the commands
- * .
  * Return: 0 success
  */
 
@@ -13,6 +10,10 @@ void display_prompt(void)
 	write(STDOUT_FILENO, " ", 1);
 	fflush(stdout);
 }
+/**
+ * run_shell - execute commands inputted by the user.
+ * Return: 0 success
+ */
 void run_shell(void)
 {
 	char command[MAX_COMMAND_LENGTH];
