@@ -12,7 +12,9 @@ void print_environment(void)
 
 	while (*env_var != NULL)
 	{
-		printf("%s\n", *env_var);
+		size_t len = strlen(*env_var);
+		write(STDOUT_FILENO, *env_var, len);
+		write(STDOUT_FILENO, "\n", 1);
 		env_var++;
 	}
 }

@@ -18,7 +18,7 @@ void read_command(char *command)
 	else if (bytes_read == 0)
 	{
 		/* Handle end of file (Ctrl+D) */
-		printf("\n");
+		write(STDOUT_FILENO, "\n", 1);
 		exit(EXIT_SUCCESS);
 	}
 	/* Remove the trailing newline character */

@@ -6,6 +6,7 @@
 
 void exit_shell(void)
 {
-	printf("Exiting the shell.\n");
+	const char *message = "Exiting the shell.\n";
+	write(STDOUT_FILENO, message, strlen(message));
 	exit(EXIT_SUCCESS);
 }

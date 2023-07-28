@@ -10,7 +10,7 @@
 
 void display_prompt(void)
 {
-	printf(" ");
+	write(STDOUT_FILENO, " ", 1);
 	fflush(stdout);
 }
 void run_shell(void)
