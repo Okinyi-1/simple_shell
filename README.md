@@ -1,5 +1,4 @@
 0x16. C - Simple Shell Team project
-This project was created by paul Chege and Tonnie Okinyi
 
 The following are the general requirements of this project:
 1. Allowed editors: vi, vim, emacs
